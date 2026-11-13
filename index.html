@@ -447,6 +447,8 @@ html,body{overscroll-behavior:none}
 .dlg-win{width:min(1240px,100%);justify-self:center}
 /* 互動視窗的標題列不要被很長的內容壓扁（總覽 63 格時標題列原本只剩幾 px，關閉鈕會凸出去） */
 .dlg-win .bar,.boot-win .bar{flex:none}
+/* 「放大」鈕要在所有投影片物件之上（物件的 z-index 會到好幾百，原本的 70 會被層級高的照片蓋住而點不到） */
+.zoomchip{z-index:5000}
 
 </style>
 </head>
